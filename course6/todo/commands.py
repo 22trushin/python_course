@@ -104,11 +104,3 @@ class ExitCommand(BaseCommand):
     def perform(self, objects, *args, **kwargs):
         raise UserExitException('See you next time!')
 
-
-class DoneCommand(BaseCommand):
-    @staticmethod
-    def label():
-        return 'exit'
-
-    def perform(self, objects, *args, **kwargs):
-        raise UserExitException('See you next time!')
