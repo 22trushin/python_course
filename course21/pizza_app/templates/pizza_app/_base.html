@@ -14,9 +14,6 @@
 
 <body>
 
-{%  if user.is_anonymous %}
-    <a href="{% url 'auth_app:register' %}">Зарегестрироваться на сайте</a>
-{% endif %}
 
   <main>
     {% block content %}
